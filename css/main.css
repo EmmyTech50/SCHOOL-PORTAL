@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(2, 2, 67);
+    height: 100vh;
+    zoom: 0.85;
+} 
+
+.menu{
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+
+.main-content{
+    max-height: 100vh;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+}
+
+li.active, li:hover{
+    background-color: #fff !important;
+    border-radius: 8px;
+    color: rgb(2, 2, 67)!important;
+}
+
+
+li > a{
+    text-decoration: none;
+}
+
+li {
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+  }
+
+
+  li.active::after {
+    content: '';
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-color: #fff; 
+    border: 36px solid #fff;
+    border-radius: 0 50% 50% 0;   
+    top:0px; 
+    right:-23px; 
+  }
+
+.rounded-extended {
+    border-radius: 10px;
+    color: blue !important;
+}
+
+
+
+
